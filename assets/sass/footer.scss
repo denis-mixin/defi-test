@@ -1,0 +1,153 @@
+.footer {
+    background: linear-gradient(244.96deg, rgba(197, 207, 248, 0.15) 13.95%, rgba(72, 62, 218, 0.4) 98.36%);
+    backdrop-filter: blur(32px);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+    &-shadow{
+        position: absolute;
+        left: 50%;
+        width: 1500px;
+        transform: translate(-70%);
+        bottom:0px;
+        z-index: -1;
+        pointer-events: none
+    }
+    &-mobile-shadow{
+        display: none
+    }
+
+    &-grid {
+        @extend .grid;
+    }
+
+    &-right {
+        width: 625px;
+
+        * {
+            color: #E5EBFD;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 500;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #E84ECF;
+           pointer-events: none;
+        }
+
+        h3 {
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+    }
+
+    &-bottom {
+        margin-top: 60px;
+        max-width: 90%;
+
+        * {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #E5EBFD;
+
+        }
+        a{
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+
+    &-left {
+        &-title {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
+            text-decoration: none;
+            max-width: 500px;
+
+            a {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+
+    &-flex {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .socials {
+        margin-top: 65px;
+    }
+}
+
+
+@media only screen and (max-width: 1350px){
+    .footer{
+        &-right{
+           width: 450px; 
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .footer{
+        &-flex{
+          flex-direction: column;
+        }
+        &-right{
+            margin-top: 55px;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile){
+    .footer{
+        &-shadow{
+            display: none;
+        }
+        &-mobile-shadow{
+            top: 0px;
+            height: 100%;
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            z-index: -1;
+            pointer-events: none;
+        }
+        &-bottom{
+            width:100%;
+           *{
+            font-size: 14px;
+            line-height: 18px;
+           }
+        }
+        &-right{
+           *{
+            font-size: 14px;
+            line-height: 18px;
+           }
+        }
+        &-left{
+            &-title{
+                font-size: 18px;
+                line-height: 40px;
+                max-width: 330px;
+                a{
+                   position: relative;
+                   top: 5px;
+                }
+            }
+        }
+    }
+}
