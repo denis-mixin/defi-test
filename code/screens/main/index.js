@@ -17,7 +17,7 @@ const Main = ({ hero, videos, learnMore, media, _relativeURL, _ID }) => {
       {media}
       <script
         type='module'
-        src='/assets/js/main/index.js'
+        src={handleUrl('/assets/js/main/index.js')}
       />
     </div>
   );
