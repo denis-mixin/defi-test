@@ -15,7 +15,7 @@ function Download({ _body, appleText, appleUrl, googleUrl, googleText, _relative
             </span>
             <div className='main-hero-download-links'>
                 <a className='main-hero-download-links-link' href={appleUrl} target='_blank'>
-                    <img src={images.apple} />
+                    <img src={handleUrl(images.apple)} />
                     {appleText}
                 </a>
                 <a className='main-hero-download-links-link' href={googleUrl} target='_blank'>

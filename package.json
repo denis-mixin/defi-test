@@ -7,7 +7,8 @@
     "build": "cuttlebelle",
     "sass-prebuild": "sass ./assets/sass/index.scss ./assets/css/index.css",
     "watch-sass": "sass -w ./assets/sass/index.scss ./assets/css/index.css",
-    "watch": "yarn watch-sass &  cuttlebelle -w"
+    "watch": "yarn watch-sass &  cuttlebelle -w",
+    "deploy": "gh-pages -d site"
   },
   "cuttlebelle": {
     "site": {
@@ -18,6 +19,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "sass": "^1.48.0"
   },
   "devDependencies": {
