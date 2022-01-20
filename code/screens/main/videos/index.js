@@ -12,7 +12,7 @@ function Videos({title, videoLinks, _relativeURL, _ID}) {
             <img src = {handleUrl(images.videos.mobileShadow)} className='main-videos-mobile-shadow' alt='shadow' />
 
             <div className='main-videos-grid'>
-            <h2 className='main-videos-title'>{title}</h2>
+            <h2 className='title'>{title}</h2>
             <div className='main-videos-flex'>
                 {videoLinks}
             </div>

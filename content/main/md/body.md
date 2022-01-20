@@ -9,5 +9,8 @@ learnMore:
   - learn-more/index.md
 media:
   - media/index.md
-
+partners:
+  - partners/index.md
+protocols:
+  - protocols/index.md
 ---

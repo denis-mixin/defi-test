@@ -2,7 +2,7 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import images from "../../../assets/js/images";
 
-const Main = ({ hero, videos, learnMore, media, _relativeURL, _ID }) => {
+const Main = ({ hero, videos, learnMore, media, _relativeURL, _ID, partners, protocols }) => {
   const handleUrl = (url) => {
     return `${_relativeURL(url, _ID)}`;
   }
@@ -14,7 +14,10 @@ const Main = ({ hero, videos, learnMore, media, _relativeURL, _ID }) => {
       {hero}
       {videos}
       {learnMore}
+      {partners}
+      {protocols}
       {media}
+      
       <script
         type='module'
         src={handleUrl('/assets/js/main/index.js')}

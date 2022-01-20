@@ -1,6 +1,6 @@
 .main-media {
     @extend .grid;
-  
+    margin-top: 126px;
     position: relative;
     margin-bottom: 100px;
     height: fit-content;
@@ -8,25 +8,10 @@
         display: none;
     }
 
-    &-shadow {
-        position: absolute;
-        left: 50%;
-        transform: translate(-70%);
-        width: 1200px;
-        top: 100px;
-        z-index: -1;
-    }
-
-    &-title {
-        font-weight: 800;
-        font-size: 70px;
-        line-height: 82px;
-    }
-
     &-list {
         flex-wrap: wrap;
         display: flex;
-        gap: 55px 80px;
+        gap: 55px 70px;
         padding-top: 80px;
         justify-content: space-between;
 
@@ -36,7 +21,7 @@
 
             }
 
-            width: 300px;
+            width: 295px;
 
 
             &-body {
@@ -45,24 +30,23 @@
                 line-height: 19px;
                 padding-left: 5px;
                 padding-right: 5px;
+                margin-top: 20px;
             }
 
 
             &-poster {
                 width: 100%;
-                height: auto;
+                height: 195px;
                 position: relative;
                 margin-bottom: 20px;
-
+                border-radius: 49px;
+                overflow: hidden;
                 img {
                     pointer-events: none;
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
-                    transform: scale(1.47);
-                    transform-origin: center;
-                    position: relative;
-                    top: 24px;
+                    object-fit: cover;
+                  
                 }
 
             }
@@ -72,21 +56,18 @@
 
 @media only screen and (max-width: 1550px) {
     .main-media {
-        &-title {
-            font-size: 60px;
-            line-height: norma
-        }
 
         &-list {
             padding-top: 50px;
-            gap: 55px 20px;
+            gap: 55px 30px;
 
             &-item {
-                width: calc(25% - 20px);
+                width: calc(25% - 30px);
 
                 &-poster {
+                   height: 13vw;
                     img {
-                        transform: scale(1.28);
+                  
                     }
                 }
             }
@@ -97,15 +78,7 @@
 
 @media only screen and (max-width: $mobile) {
     .main-media {
-        &-title {
-            font-size: 32px;
-            line-height: 44px;
-        }
-      
-        &-shadow{
-            display: none;
-        }
-
+        margin-top: 80px;
         &-list {
             flex-direction: column;
             align-items: center;
@@ -116,8 +89,11 @@
                 text-align: center;
 
                 &-poster {
+                    min-height: 195px;
+                    height: 40vw;
+                    max-height: 260px;
                     img {
-                        transform: scale(1.3);
+                       
 
                     }
                 }

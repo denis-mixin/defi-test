@@ -2,7 +2,7 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import images from "../../../assets/js/images";
 
-const Navbar = ({orbsUrl, defiUrl, _relativeURL, _ID}) => {
+const Navbar = ({orbsUrl, defiUrl, _relativeURL, _ID, _body}) => {
   const handleUrl = (url) => {
     return `${_relativeURL(url, _ID)}`;
   }
@@ -14,6 +14,9 @@ const Navbar = ({orbsUrl, defiUrl, _relativeURL, _ID}) => {
         <h4>DeFi Notifications</h4>
       </a>
       <div className={`navbar-links`} data-aos = {animations.fadeLeft} >
+        <section className='navbar-links-text'>
+        {_body}
+        </section>
         <a className='navbar-links-link navbar-links-orbs' href={orbsUrl} target='_blank'>
           <img src={handleUrl(images.orbsLogoWithName)} alt='orbs logo' className='navbar-links-link-logo' />
           <img src={handleUrl(images.arrowRight)} alt='orbs logo' className='navbar-links-link-arrow' />

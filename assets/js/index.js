@@ -8,7 +8,7 @@ export const init = () => {
 
 
 const animateNavbar = () => {
-  const scrolled = window.pageYOffset >= 60
+  const scrolled = window.pageYOffset >= 10
   
   navbar.classList.toggle('navbar-active', scrolled)
  

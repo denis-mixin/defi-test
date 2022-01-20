@@ -29,10 +29,8 @@ const images = {
         shadow: '/assets/images/main/footer/shadow.png',
         mobileShadow: '/assets/images/main/footer/mobile-shadow.png',
     },
-    media:{
-        yahoo: '/assets/images/main/media/yahoo.png',
-        shadow: '/assets/images/main/media/shadow.png',
-       
+    protocols:{
+        shadow: '/assets/images/main/protocols/shadow.png',
     }
 }
 
