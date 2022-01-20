@@ -1,0 +1,26 @@
+.main-partners {
+    &-title {
+        font-weight: 800;
+        font-size: 70px;
+    }
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 80px;
+        &-item{
+            width: 140px;
+            height: 140px;
+            a{
+                width: 100%;
+                height: 100%;
+                
+            }
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

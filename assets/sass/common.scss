@@ -1,0 +1,47 @@
+.grid {
+  max-width: 1720px;
+  width: calc(100% - 140px);
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 106px;
+
+  * {
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 106px;
+  }
+}
+
+@media only screen and (max-width: 1500px){
+  .title {
+    font-size: 65px;
+    line-height: 75px;
+  
+    * {
+      font-size: 65px;
+      line-height: 75px;
+    }
+  }
+} 
+
+
+@media only screen and (max-width: $mobile) {
+  .grid {
+    width: 100%;
+    padding: 0px 30px;
+    overflow: hidden;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 44px;
+  
+    * {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+}
